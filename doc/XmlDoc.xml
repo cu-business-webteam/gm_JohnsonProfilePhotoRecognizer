@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<types>
+	<type name="Johnson.ProfilePhotoRecognizer.IFileRecognizer">
+		<member name="">
+			<summary>
+				Defines the interface required for file recognizer implementations.
+			</summary>
+		</member>
+
+		<member name="IsRecognized">
+			<summary>Attempts file recognition on the specified file.</summary>
+			<param name="fileSpecification">
+				The file to attempt recognition.
+			</param>
+			<returns>
+				Reuturns <see langword="null" /> if the file is not recognized, otherwise returns to where the file should be moved/copied.
+			</returns>
+			<remarks>
+				The returned value could be a <see cref="T:System.String" /> representation of a <see cref="T:System.Uri" /> to a remote system.
+			</remarks>
+		</member>
+	</type>
+</types>
